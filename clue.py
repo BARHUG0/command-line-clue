@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 
 import os
 import shutil
@@ -490,7 +490,7 @@ Remember: Use 'cd "{next_location}"' to follow this lead.
 
 if __name__ == "__main__":
   game = MysteryGame()
-  game.generate_mystery(3, 3)
+  game.generate_mystery()
   game.create_game_directories()
   game.create_breadcrumbs()
   print("Your mystery game has been generated!")
