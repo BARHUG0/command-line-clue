@@ -6,7 +6,7 @@
 - [X] The Blacksmith
 
 ## Weapons
-- [ ] Letter Opener
+- [X] Letter Opener
 - [ ] Garden Shears
 - [ ] Bronze Trophy
 
@@ -14,4 +14,5 @@
 *Use this space to record your findings and deductions...*
 - Clue number 0 found in game
 - Clue number 1 found in houses
+- Clue number 2 found in school classrooms art room
 Location of the crime is still unknown - the room must have been empty when it happened...
