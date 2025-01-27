@@ -7,7 +7,7 @@
 
 ## Weapons
 - [X] Letter Opener
-- [ ] Garden Shears
+- [X] Garden Shears
 - [ ] Bronze Trophy
 
 ## Notes
@@ -16,4 +16,5 @@
 - Clue number 1 found in houses
 - Clue number 2 found in school classrooms art room
 - Clue number 3 found in school gymnasium
+- Clue number 4 found in shops market
 Location of the crime is still unknown - the room must have been empty when it happened...
