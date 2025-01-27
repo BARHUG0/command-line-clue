@@ -2,7 +2,7 @@
 
 ## Suspects
 - [ ] The Police Officer
-- [ ] The Shopkeeper
+- [X] The Shopkeeper
 - [X] The Blacksmith
 
 ## Weapons
@@ -15,4 +15,5 @@
 - Clue number 0 found in game
 - Clue number 1 found in houses
 - Clue number 2 found in school classrooms art room
+- Clue number 3 found in school gymnasium
 Location of the crime is still unknown - the room must have been empty when it happened...
