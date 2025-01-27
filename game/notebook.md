@@ -3,7 +3,7 @@
 ## Suspects
 - [ ] The Police Officer
 - [ ] The Shopkeeper
-- [ ] The Blacksmith
+- [X] The Blacksmith
 
 ## Weapons
 - [ ] Letter Opener
@@ -13,4 +13,5 @@
 ## Notes
 *Use this space to record your findings and deductions...*
 - Clue number 0 found in game
+- Clue number 1 found in houses
 Location of the crime is still unknown - the room must have been empty when it happened...
