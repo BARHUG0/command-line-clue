@@ -1,0 +1,5 @@
+Investigation Update:
+
+A hastily written note mentions checking the offices next.
+
+Remember: Use 'cd "offices"' to follow this lead.

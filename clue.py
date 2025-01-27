@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 
 import os
 import shutil
@@ -210,8 +210,13 @@ Location of the crime is still unknown - the room must have been empty when it h
       f.write(self.generate_notebook())
 
     def create_directories(current_path: Path, structure: dict):
+      print(structure.items())
+      print("room content: /n")
+      print(self.room_contents)
+      print("\n")
       for name, substructure in structure.items():
         new_path = current_path / name
+        
 
         try:
           new_path.mkdir(exist_ok=True)
@@ -219,22 +224,29 @@ Location of the crime is still unknown - the room must have been empty when it h
           continue
 
         # Get relative path for content lookup
-        rel_path = str(new_path.relative_to(base_dir))
+        rel_path = str(new_path.relative_to(base_dir)).replace("\\", "/")
 
         # Get and create room contents
         contents = self.room_contents.get(rel_path, {"people": [], "objects": []})
-
-        try:
+        print("rel_path: \n")
+        print(rel_path)
+        print("\n")
+        print("content \n")
+        print(contents)
+        print("\n")
+        
           # Create persons.txt
-          with open(new_path / "persons.txt", "w") as f:
-            f.write("\n".join(contents["people"]))
+        with open(new_path / "persons.txt", "w") as f:
+          f.write("\n".join(contents["people"]))
+          f.close
+          print("HI PERSONS\n")
 
           # Create objects.txt
-          with open(new_path / "objects.txt", "w") as f:
-            f.write("\n".join(contents["objects"]))
+        with open(new_path / "objects.txt", "w") as f:
+          f.write("\n".join(contents["objects"]))
+          f.close
+          print("HI OBJECTS")
 
-        except Exception as e:
-          print(f"Error creating files in {new_path}: {e}")
 
         # Process subdirectories
         if substructure:
@@ -490,7 +502,7 @@ Remember: Use 'cd "{next_location}"' to follow this lead.
 
 if __name__ == "__main__":
   game = MysteryGame()
-  game.generate_mystery()
+  game.generate_mystery(3, 3)
   game.create_game_directories()
   game.create_breadcrumbs()
   print("Your mystery game has been generated!")
